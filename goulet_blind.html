@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+<div class="container">
+
+<h2>Want to look at Goulet samples blindly?!</h2>
+<p>This page contains a bookmarklet that will let you hide all text from Goulet ink sample pages. No more influence from insane manufacturer policies, nib repair conspiracies, the unpronounced French letter H, or superfluous prices.</p>
+<p>To learn how to use bookmarklets, here is a <a href="http://www.howtogeek.com/189358/beginner-geek-how-to-use-bookmarklets-on-any-device/">tutorial</a>.</p>
+<p>Here is the <a href="javascript:(function(){ var addEvent = function(elem, type, eventHandle) { if (elem == null || typeof(elem) == 'undefined') return; if ( elem.addEventListener ) { elem.addEventListener( type, eventHandle, false ); } else if ( elem.attachEvent ) { elem.attachEvent( 'on' + type, eventHandle ); } else { elem['on'+type]=eventHandle; } }; var hideInk = function(){ Array.prototype.forEach.call(document.getElementsByClassName('img-rounded'), function(e){ e.style.marginTop = (-e.clientHeight / 2.8) + 'px'; }); Array.prototype.forEach.call(document.getElementsByClassName('mz-productlisting-image'), function(e){ e.style.overflow = 'hidden'; }); Array.prototype.forEach.call(document.getElementsByClassName('mz-productlisting-info'), function(e){ e.style.display = 'none'; }); Array.prototype.forEach.call(document.getElementsByClassName('mz-productlisting'), function(e){ e.style.height = '180px'; }); }; hideInk(); addEvent(window, 'resize', hideInk) })();">bookmarklet</a>. Simply apply it on any Goulet ink sample page. <a href="http://www.gouletpens.com/ink-samples/c/21?pageSize=1000&sortBy=createDate+asc&categoryId=21">Here is link to view all Goulet samples at once</a>.</p>
+
+</div>
+
+</body>
+</html>
+
+
